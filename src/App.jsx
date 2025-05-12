@@ -14,7 +14,10 @@ const XDictinary = () => {
 
 const handleChange = e => setText(e.target.value);
 
-
+const handleClick = () => {
+  let item = dictionary.find(i => i.word.toLocaleLowerCase() === text.toLocaleLowerCase());
+  setDefinition(item ? item.meaning : "word not found in the dictionary.")
+}
 
   return (
     <>
