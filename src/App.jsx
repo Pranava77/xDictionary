@@ -7,6 +7,14 @@ const dictionary = [
 ]
 
 
+const XDictinary = () => {
+  const [text, setText] = useState("")
+  const [definition, setDefinition] = useState()
+
+
+const handleChange = e => setText(e.target.value);
+
+
 
   return (
     <>
